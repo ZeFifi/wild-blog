@@ -1,0 +1,17 @@
+.blog-post {
+    border-radius: 2px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05),0 1px 3px 0 rgba(0,0,0,.25);
+    transition: box-shadow 0.3s;
+    padding: 16px;
+    margin-bottom: 2rem;
+}
+
+.no-post {
+    text-align: center;
+    color: #ccc;
+    font-style: italic;
+    border: 1px solid #ccc;
+    padding: 16px;
+}

@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+import "./index.css";
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -16,19 +18,21 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
+        {console.log(posts)}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
+            <div className="blog-post" key={node.fields.slug}>
+              <h2
                 style={{
                   marginBottom: rhythm(1 / 4),
+                  marginTop: "1.75rem"
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h3>
+              </h2>
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{

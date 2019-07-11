@@ -1,0 +1,12 @@
+h1 {
+    color: #f76c6c;
+    text-align: left;
+}
+
+ul, ol {
+    margin-left: 15px;
+}
+
+blockquote {
+    margin-left: 0;
+}

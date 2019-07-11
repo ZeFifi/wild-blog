@@ -1,0 +1,14 @@
+header {
+    background-color: #f76c6c;
+    padding: 16px;
+}
+
+h1, h3 {
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+a {
+    color: #f76c6c;
+}
